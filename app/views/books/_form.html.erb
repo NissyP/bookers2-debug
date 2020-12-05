@@ -1,6 +1,6 @@
-<% if @book.errors.any? %>
-              <%= @book.errors.count %> errors prohibited this obj from being saved:
-              <p><% @book.errors.full_messages.each do |message| %></p>
+<% if book.errors.any? %>
+              <%= book.errors.count %> errors prohibited this obj from being saved:
+              <p><% book.errors.full_messages.each do |message| %></p>
                 <%= message %>
               <% end %>
             <% end %>
