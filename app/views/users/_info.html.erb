@@ -15,7 +15,7 @@
 </div>
 
 <p><%= link_to "フォロー数: #{user.follower.count}", user_follower_path(user) %></p>
-<p><%= link_to "フォロワー数: #{user.followed.count}", user_followed_path(user ) %></p>
+<p><%= link_to "フォロワー数: #{user.followed.count}", user_followed_path(user) %></p>
 <% unless user == current_user %>
   <% if current_user.following?(user) %>
     <%= link_to 'フォロー外す', unfollow_path(user.id), method: :POST %>
